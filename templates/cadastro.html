@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Source </title>
+    <meta name="description" content="Cadastro de comandos">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" href="{{ url_for('static', filename = 'favicon.jfif') }}" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'estilo.css') }}">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+</head>
+
+<body background=>
+    <div id="topo">
+        <h1>Cadastrar comandos</h1>
+    </div>
+    <div id="topo">
+        <h2> Preencha o formulário abaixo para cadastrar novos comandos</h2>
+    </div><br />
+    <div id="loading" align = "center" style="display:none;"><img src="{{ url_for('static', filename = 'load.gif') }}" alt="" width="50" height="50" /></div>
+    <form method="post">
+        <fieldset>
+            <legend>Comando</legend>
+            <table cellspacing="10">
+                <tr>
+                    <td>
+                        <label name= "tag" for="tel">TAG: </label>
+                    </td>
+                    <td align="left">
+                        <input autofocus = "true" spellcheck="true" name = "tag"  type="tel" required = "true" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pattern">Palavras Chaves: </label>
+                    </td>
+                    <td align="left">
+                        <input required = "true" type="tel" spellcheck="true" name="pattern1" size="13" > - <input required = "true" type="tel" spellcheck="true" name="pattern2"
+                            size="13"> - <input required = "true" type="tel" spellcheck="true" name="pattern3" size="13">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="resp">Resposta:</label>
+                    </td>
+                    <td align="left">
+                        <input type="tel" required = "true" name="resp" size="150">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br />
+        <input type="reset" id="consultar" value="Limpar" class="link7" align = "center">
+        <input type="submit" id="consultar" value="." class="link3" onclick="$('#loading').show();">
+    </form>
+
+    <td height="100%" align="center">
+        
+        <div id="texto">
+            <h2>
+                <div>
+                    {% if retorno %}
+                </div>
+                {{retorno}}
+                <div>
+                    {% endif %}
+                </div>
+            </h2>
+        </div>
+
+    </td>
+
+    <div id="title" align="center">
+        <a href="{{ url_for('main') }}"><button name = "voltar" class="link3">Voltar</button></a>
+    </div>
+ 
+
+</body>
+
+</html>

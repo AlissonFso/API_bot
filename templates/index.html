@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <title>Buscador de comandos</title>
+    <link rel="icon" href="{{ url_for('static', filename = 'favicon.jfif') }}" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'estilo.css') }}">
+   
+</head>
+
+<body>
+   
+    <table id="corpo" align="center" cellpadding="0" cellspacing="0">
+        
+        <tr>
+            <td align="center">
+                <div id="topo">
+                    <h1>Buscador de comandos</h1>
+                    <span class="link4">Digite o que procura:</a></span> 
+                    <form method="get" id="form" action="" target="_top">
+                        <input autofocus type="tel" name="Dados" placeholder="Faça sua busca"/>
+                        <input type="hidden" id="4bb5ad52af6418f9bb15dcac2bccafe9"
+                            name="4bb5ad52af6418f9bb15dcac2bccafe9" value="0" /> 
+                        <input type="submit" id="consultar" title="Clique para buscar o comando!" tabindex="2" value="L" />
+                    </form>
+                </div>
+            </div>
+       
+            </td>
+        </tr>
+        <tr>
+            <td height="100%" align="center">
+                <div id="texto">
+                    <h2>Resultado obtido:</h2>
+                    <h2>
+                        <div>
+                            {% if resultado  %}
+                        </div>
+                            {{resultado}} 
+                        <div>
+                            {% endif %}
+                        </div>
+                    </h2>
+                </div>
+            
+            </td>
+            </tr>
+            <tr>
+                
+                    <td id="title" align="center">
+                        <textarea class="link6" hidden >{{resultado_str}}</textarea>
+                        <br>
+                        <a href="{{ url_for('source') }}"></a><button class ="link5" id="copy">Copiar</button></a>
+                        <script>
+                            let btn = document.querySelector('#copy');
+                            btn.addEventListener('click', function(e) {
+                                let textArea = document.querySelector('.link6');
+                                textArea.select();
+                                document.execCommand('copy');
+                                });
+                        </script>
+                        <br>
+                        <br>
+                        <a href="{{ url_for('source') }}"><button name = "cadastrar_comando" class="link3">Cadastrar comando</button></a>
+                    </td>
+                
+            </tr>
+        </tr>
+        <tr>
+            <td id="rodape" align="center" title="9 - 0.001">
+                Bucador de comandos - 2021<br />
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

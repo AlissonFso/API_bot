@@ -1,0 +1,499 @@
+{
+  "intents": [
+    {
+      "tag": "welcome",
+      "patterns": [
+        "Oi",
+        "Olá",
+        "Ola",
+        "bom dia",
+        "boa tarde",
+        "boa noite",
+        "good morning",
+        "Hi",
+        "hello",
+        "Olá"
+      ],
+      "responses": [
+        "Ola, eu sou sua assistente virtual, em que posso te ajudar?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "censored",
+      "patterns": [
+        "feia",
+        "boba",
+        "chata",
+        "vai pro inferno",
+        "puta",
+        "quer casar comigo?",
+        "sua gostosa"
+      ],
+      "responses": [
+        "Não toleramos nenhum tipo de assédio."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "obrigada",
+        "tks",
+        "thank you",
+        "valeu",
+        "obrigada pela ajuda",
+        "muito obrigada"
+      ],
+      "responses": [
+        "De nada ;)",
+        "Agradeço seu contato, volte sempre!"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "anything_else",
+      "patterns": [],
+      "responses": [
+        "Desculpa, não entendi o que você falou, tente novamente!"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "flexivel",
+      "patterns": [
+        "flexviel central",
+        "flexivel CP",
+        "flexivel Comunic"
+      ],
+      "responses": [
+        "Para poder cadastrar o flexivel pode se fazer da seguinte maneira:\n  701 000 *\n 704 rrr apt *\n 701 99 *\n Ou pode ser feito pelo comando: #30 000 apt"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "senha",
+      "patterns": [
+        "senha xpe",
+        "senha de usuario",
+        "senha de acesso",
+        "senha"
+      ],
+      "responses": [
+        "Para poder cadastrar a senha pode-se utilizar o comando:\n # 1000 sss apt ##\n Para uma senha geral, utilize:\n #1000 ssss ##"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "tag XPE",
+      "patterns": [
+        "cartão XPE",
+        "rfid XPE",
+        "tag XPE",
+        "chaveiro XPE",
+        "Cadastro de TAG XPE"
+      ],
+      "responses": [
+        "Para poder cadastrar a tag mestre utilize o comando:\n #7931##\n Para cadastrar as TAGs direto do apartamento, utilize o comando:\n #794##"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "tag collective",
+      "patterns": [
+        "cartão collective",
+        "rfid collective",
+        "tag collective",
+        "chaveiro collective",
+        "Cadastro de TAG Collective"
+      ],
+      "responses": [
+        "Para poder cadastrar a tag mestre utilize o comando:\n 701 000*\n750 1* \n 701 99*\n Para cadastrar as TAGs direto do apartamento, utilize o comando:\n #50"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "prefixo",
+      "patterns": [
+        "prefixo",
+        "tecla unica"
+      ],
+      "responses": [
+        "Para poder cadastrar o prefixo/tecla unica utilize:\n # 4 + prefixo ##"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "tecla portaria",
+      "patterns": [
+        "tecla portaria, tecla xpe, "
+      ],
+      "responses": [
+        "Para poder cadastrar a tecla portaria utilize:\n # 3 + numero a discar ##"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ramal portaria",
+      "patterns": [
+        "portaria, ramal portaria, ramal 94"
+      ],
+      "responses": [
+        "Para poder cadastrar o ramal portaria utilize:\n 701 000 *\n 710 + ramal disico *\n 701 99*"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "video porteiro",
+      "patterns": [
+        "video porteiro",
+        "XPE IP"
+      ],
+      "responses": [
+        "No cenário pode-se utilizar, para módulo externo, um porteiro XPE 3115 IP e para os modulos internos as telas TVIP 3000. Basta configurar os dispositivos em uma rede local e cadastrar o plano de discagem no XPE. Caso queira utilizar aplicaitivo é necessário utilizar um servidor SIP e cadastrar os dispositivos neste servidor"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Plano numeração flexível",
+      "patterns": [
+        "XPE ITC",
+        "Cadastro de celular no XPE"
+      ],
+      "responses": [
+        "Para habilitar a tabela de numeração flexível do XPE utilize o comando> # 241 ## . E para cadastrar os números dos telefones/celulares utilize o comando: # 25 apt * celular ## "
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Especificação do MIP",
+      "patterns": [
+        "Especificação do MIP",
+        "Indicação MIP"
+      ],
+      "responses": [
+        "Especificação do SCA 1000:\n Temos a solução MIP 1000, que é um sistema de controle de acesso, onde ele será o equipamento principal, onde ficará  armazenadas todas as configurações, como usuários, TAG's, controles, senhas e dispositivos.\nJunto a ele pode ser integrados os seguintes dispositivos.\n XPE 1001 ID, XPE 1013 ID ou XPE 1001 Plus ID e XPE 1013 Plus ID -> interfone de rua que se estiver conectado a uma central   de interfônia. As suas saídas pode ser acionadas através de: TAG, senha, comando internos dos interfones MF, depende de centrais de interfonia ou PABX ou botoeira.\nXLT 1000 ID -> Teclado que pode ser acionado através de: TAG, senha e botoeira.\nXRE 1000 ID -> Receptora que pode ser acionada através de um controle remoto ou botoeira.\nXID 1000 -> TAG que opera na frequência de 13,56Mhz, que pode acionar XPE ID, XLT 1000 ID e Bio Inox.\nCaracteristíca da TAG:\n1 – Tecnologia MIFARE frequência de 13,56 Mhz\n2 – Memoria de 1K de armazenamento\n3 – Memoria de 32 bits, formato em que o código fica salvo na TAG.\nXTR 1000 -> Controle remoto dedicado para o XRE 1000 que opera na frequência de 433,92 Mhz.\nO MIP 1000 pode receber a integração com os seguintes equipamentos:\nBio Inox Plus SS 311 MF Leitor biométrico e leitor de TAG. \nCT 500 1P -> Controladora que habilita a integração com a antena LE 150EP, onde um veiculo com a TAG TH 382 T, que ao se  aproximar do portão fará o acionamento.\nTodos os equipamento acima se comunicam com o MIP através do barramento serial, que é utilizado 1 par de fio de cada dispositivo até o MIP.\nO MIP 1000 possui um software de operação que é o SGA 1000, que pode ficar conectado a um PC próximo ao MIP para gerenciar o funcionamento e a identificação dos usuários.\nSuporta até 24 dispositivos que foram descritos acima. Suporta 4000 usuários, 4000 TAG, 4000 senhas e 4000 biometrias "
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Conexão SGA IP",
+      "patterns": [
+        "Conexão SGA IP",
+        "Acesso remoto SGA IP"
+      ],
+      "responses": [
+        "Cenário 1 -> conexão direta do SGA IP Externo ao MIP IP:\n1-Fixar IP para o MIP IP;\n1-Redirecionar a porta 12356 TCP para o IP do MIP IP no roteador;\n1-Conectar o SGA IP externo ao MIP IP colocando os dados de IP publico/DDNS e a porta 12356 na configuração: inicio ->  Adicionar MIP IP manualmente.\nCenário 2 -> conexão do SGA IP Externo ao SGA IP que está no PC ligado ao MIP 1000:\n2-Fixar IP do computador (servidor) conectado fisicamente ao MIP IP;\n2-Redirecionar a porta 5432 TCP para o IP do computador local;\n2-No SGA IP externo configurar o menu: Configuração do Software/SGA Cliente com o endereço IP publico/DDNS e porta 5432 "
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Eletroimã XPE",
+      "patterns": [
+        "Eletroimã XPE",
+        "Fechadura eletroimã XPE"
+      ],
+      "responses": [
+        "Como configurar ELETROÍMÃ na saída AUX.\n+ da FONTE no PINO 1 do AUX.\n- da FONTE no - da FECHADURA.\nPINO 2 do AUX no + da FECHADURA."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Cadastro MIP 1000",
+      "patterns": [
+        "Cadastro SCA",
+        "Cadastro dispositivos"
+      ],
+      "responses": [
+        "Para cadastrar os dispositivos no MIP é necessário que o dispositivo esteja conectado no Serial 485 do MIP, feito isso siga os passos:\nCadastro -> dispositivos -> Incluir -> VIA SERIAL 2 -> Seleciona o modelo do dispositivo (XPE 10xx ID) -> aguarde os 30 segundos -> ok -> configure o dispositivo de acordo com a necessidade do cliente. "
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "TPI não comunica",
+      "patterns": [
+        "TPI não comunica",
+        "Falha TPI"
+      ],
+      "responses": [
+        "Verificar que jumpers prog 1 e prog 2 deve estar abertos.\nAlterar a porta de comunicação no TPI;\nAtualizar drive do cabo adaptador;\nInstalar Prolific;\nAnalisar pinos do cabo serial para DB9;\nDesabilitar o firewall do Windows;\nReiniciar o computador;\n Desabilitar o Antivírus;\nDesinstalar o TPI;\nRealizar um novo download do TPI;\nInstalar como administrador.\nAtualizada a versão do Java."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Reset CP",
+      "patterns": [
+        "Reset CP",
+        "CP Reset"
+      ],
+      "responses": [
+        "Como resetar CP.\n1- Coloque os straps PROG1 e PROG2. O LED LD2 pisca lentamente;\n1- Coloque e retire o strap RESET. Os LEDs LD1 e LD2 acendem e, em seguida, piscam simultaneamente;\n1-Retire os straps PROG1 e PROG2. Os LEDs LD1 e LD2 continuam piscando simultaneamente;\n1- Coloque e retire o strap RESET. Os LEDs LD1 e LD2 acendem e, em seguida, o LED LD2 passa a piscar lentamente, indicando operação normal do sistema. "
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Senha TDMI",
+      "patterns": [
+        "Senha TDMI",
+        "TDMI Senha",
+        "Tecla senha TDMI",
+        "TDMI Tecla senha"
+      ],
+      "responses": [
+        "Como configurar tecla senha do TDMI.\n1- Aperte e segure a tecla * até ouvir dois bípes;\n2- Digite # 1 + P ## e espere os dois bípes;\n3- Coloque o telefone no gancho "
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Portaria TDMI",
+      "patterns": [
+        "Portaria TDMI",
+        "TDMI Portaria",
+        "Tecla Portaria TDMI",
+        "TDMI Tecla Portaria"
+      ],
+      "responses": [
+        "Como configurar tecla portaria do TDMI.\n1- Aperte e segure a tecla * até ouvir dois bípes;\n2- Digite # 3 + P ## e espere os dois bípes;\n3- Coloque o telefone no gancho "
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "cadastro",
+      "patterns": [
+        "controle da amt",
+        "controle remoto",
+        "amt"
+      ],
+      "responses": [
+        "ENTER + 60 + 00 + ENTER"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "conexão cloud",
+      "patterns": [
+        "cloud amt",
+        "conexão cloud teclado",
+        "intelbras cloud"
+      ],
+      "responses": [
+        "Em modo de programação com a senha do instalador, Enter + 17 + Enter + 400 (Regular Ip/Telefone) + Enter Enter + 19 + Enter + 0 (Somente Ethernet) + Enter Enter + 8011 + Enter + 000.000.000.000 + Enter Enter + 8031 + Enter + amt.intelbras.com.br + Enter Enter + 8021 + Enter + 9009 (Porta de Comunicação) + Enter Enter + 830 + Enter + Habilitar Opções 1 e 3 + Enter Enter + 832 + Enter + Habilitar Opção 5 + Enter Enter + 831 + Habilitar Opçã3o 1 (Dhcp Habilitado) + Enter.     Sai do modo de programação com a senha do instalador, E pressiona a tecla \"9\" por trÊs segundos e verifica habilitou Ip1."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Tom de ocupado",
+      "patterns": [
+        "Cadência de Tom",
+        "Ring de ocupado",
+        "leitura de cadência de tom "
+      ],
+      "responses": [
+        "Para programar a leitura de cadência de tom ocupado faça: # 211 ##"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Cadastro tabela flexível",
+      "patterns": [
+        "tabela flexível XPE",
+        "flexível XPE",
+        "ITC XPE"
+      ],
+      "responses": [
+        "Para habilitar a agenda faça o comando: #241## e para cadastrar os números utilize: # 25 apt * celular ##"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "tempo de acionamento porteiro",
+      "patterns": [
+        "tempo",
+        "acionamento",
+        "porteiro"
+      ],
+      "responses": [
+        "Esta programação define por quanto tempo o porteiro mantém o acionamento das saídas (F1 F2 / NA C NF). Não se recomenda utilizar tempos de saída muito elevados, sob risco de danificar a fechadura. Para alterar o tempo de acionamento, entre em modo de programação e digite: # + 5 + S + TTT + # # Onde: » S = 1: para configurar o acionamento da saída (F1e F2). » S = 2: para configurar o acionamento da saída (NA C NF). » TTT é o tempo de acionamento que vai de 000 à 180, múltiplos de 0,5 segundo (Padrão de fábrica: 002 [1 segundo])."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Apagar senha",
+      "patterns": [
+        "apagar senha",
+        "apagar senha porteiro",
+        "apagar senha usuário"
+      ],
+      "responses": [
+        "Para apagar a senha de usuário utilize o comando : # + 8000 + # + AP + #"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "alerta de porta ",
+      "patterns": [
+        "alerta de porta aberta",
+        "tempo de alerta",
+        "tempo porta aberta"
+      ],
+      "responses": [
+        "Para configurar o tempo para iniciar o alerta de porta aberta utilize o comando: # + 701 + TT + ##"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "habilitar mf",
+      "patterns": [
+        "comando mf",
+        "acionamento mf",
+        "desabilitar mf"
+      ],
+      "responses": [
+        "Para habilitar/desabilitar o acionamento por comando MF utilize o comando :# + 73 + OP + # #"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "tempo de conversação",
+      "patterns": [
+        "tempo de conversação",
+        "tempo comunicação",
+        "tempo xpe"
+      ],
+      "responses": [
+        "Para configurar tempo de conversação faça o comando: # 6 + tt ##"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "volume transmissão",
+      "patterns": [
+        "volume transmissão",
+        "volume microfone",
+        "volume mic xpe"
+      ],
+      "responses": [
+        "Esta programação permite configurar o nível do volume do microfone. Para configurar entre no modo de programação e digite: # + 791 + V + # #"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "volume recepção",
+      "patterns": [
+        "volume receção",
+        "volume auto-falante",
+        "volume recepção xpe"
+      ],
+      "responses": [
+        "Esta programação permite configurar o nível do volume do alto-falante. Para configurar entre no modo de programação e digite: # + 792 + V + # #"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "portaria presente",
+      "patterns": [
+        "portaria presente",
+        "portaria presente comunic",
+        "portaria presente central"
+      ],
+      "responses": [
+        "Portaria Presente (#608 1) Quando a portaria programa Portaria presente, todas as ligações do ramal de porteiro vão para a portaria, que pode ou não transferir para o apartamento. Para desprogramar a Portaria presente, basta a portaria digitar #608 0"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "reset porteiro",
+      "patterns": [
+        "reset porteiro",
+        "reset xpe",
+        "reset xpe 1013"
+      ],
+      "responses": [
+        "Para efetuar o reset geral no XPE faça o comando : # 99 * 4 * 82 ##"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "teste",
+      "patterns": [
+        "teste1 ",
+        "testar",
+        "testando"
+      ],
+      "responses": [
+        "Apenas um teste"
+      ],
+      "context": [
+        ""
+      ]
+    }
+  ]
+}

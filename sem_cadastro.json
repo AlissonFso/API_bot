@@ -1,0 +1,83 @@
+{
+  "intents": [
+    {
+      "tag": "xxx",
+      "patterns": [
+        "xxx",
+        "xxx"
+      ],
+      "responses": [
+        "xxxxxxx"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "melancia"
+    },
+    {
+      "tag": "test"
+    },
+    {
+      "tag": "testar"
+    },
+    {
+      "tag": "teste1"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "teste"
+    },
+    {
+      "tag": "701 000"
+    }
+  ]
+}
